@@ -1,0 +1,656 @@
+/*! normalize.css v1.0.0 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background: #eaeaea;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #408698;
+  text-decoration: none;
+}
+a:hover {
+  color: #295762;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol {
+  margin: 0px;
+}
+p {
+  margin: 0 0 10px 0;
+}
+.home-content {
+  padding: 20px 0;
+  background: url(../img/heroimage.png) center center no-repeat #000000;
+  background-size: cover;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.home-content .logo {
+  width: 300px;
+  height: auto;
+  margin: 20px 0 30px;
+}
+.home-content p {
+  margin-bottom: 30px;
+}
+.home-content .home-content-inner {
+  width: auto;
+  position: relative;
+  color: #fff;
+  padding: 0 10px;
+}
+.home-content .home-content-right {
+  position: relative;
+}
+.home-content .home-content-right h3 {
+  font-weight: 100;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+.home-content .home-content-right .episode-card {
+  margin-right: 0px;
+}
+.home-content .home-content-right .episode-card:hover {
+  margin-right: -2px;
+}
+.home-content .home-content-left {
+  width: auto;
+}
+.series-content-header {
+  min-height: 200px;
+  background: url(../img/heroimage.png) center center no-repeat #000000;
+  background-size: auto 420px;
+  color: #fff;
+}
+.series-content-header .series-content-header-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.series-content-header .logo {
+  width: 260px;
+  height: auto;
+  margin: 40px 0;
+}
+.episode-card {
+  max-width: 300px;
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  margin: 0 0 20px;
+}
+.episode-card.active {
+  border: 2px solid #333;
+}
+.episode-card .thumbnail-container {
+  height: 120px;
+  overflow: hidden;
+}
+.episode-card .thumbnail-container img {
+  width: 100%;
+  height: auto;
+}
+.episode-card a {
+  color: #333;
+}
+.episode-card .card-content {
+  padding: 15px;
+}
+.episode-card .sub-info {
+  font-size: 12px;
+  font-style: italic;
+}
+.comic-viewport {
+  padding: 0;
+  background: #333;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.comic-viewport .comic-screens {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  list-style: none;
+}
+.comic-viewport .comic-screens li {
+  width: 100%;
+  background: #777;
+  position: relative;
+}
+.comic-viewport .comic-screens .last-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.comic-viewport .comic-screens .last-content {
+  padding: 40px;
+}
+.comic-viewport .comic-screens .last-content h4 {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.comic-viewport .comic-screens .last-content h2 {
+  margin-bottom: 20px;
+}
+.comic-viewport .comic-screens img {
+  width: 100%;
+  height: auto;
+  max-width: 1100px;
+  display: block;
+}
+.comic-viewport .control-bar {
+  border-top: 4px solid #408698;
+  background: #333;
+  text-align: right;
+}
+.comic-viewport .control-bar .arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  background: #408698;
+  position: relative;
+  top: -25px;
+  border: none;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  outline: 0;
+  padding: 6px 0;
+}
+.comic-viewport .control-bar .arrow:focus {
+  outline: 0;
+}
+.comic-viewport .control-bar .arrow:hover {
+  background: #295762;
+}
+.comic-viewport .control-bar .arrow img {
+  width: 24px;
+  height: auto;
+}
+.comic-viewport .control-bar .arrow:disabled {
+  background: #36474d;
+  color: #666;
+}
+.comic-viewport .control-bar .arrow:disabled img {
+  opacity: .25;
+}
+.comic-viewport .control-bar .arrow.prev {
+  margin-left: 30px;
+}
+.comic-viewport .control-bar .progress-nav {
+  float: left;
+  list-style: none;
+  padding: 0px;
+  margin: 5px 0 0 15px;
+  display: none;
+}
+.comic-viewport .control-bar .progress-nav li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #408698;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-right: 5px;
+}
+.comic-viewport .control-bar .progress-nav li.active {
+  background: #408698;
+}
+.comic-viewport .control-bar .progress-nav li:focus {
+  outline: 0;
+}
+.comic-viewport .control-bar .progress-nav .progress-nav-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.comic-viewport .control-bar .directional-buttons {
+  display: block;
+  padding: 0 10px;
+}
+.comic-viewport .control-bar .ep-direction-btn {
+  margin: 0 15px 0 0;
+  float: left;
+  clear: left;
+}
+.comic-viewport .episode-info {
+  color: #ccc;
+  background: #333;
+  padding: 15px;
+}
+.comic-viewport .episode-info h3 {
+  margin: 0px;
+  font-size: 22px;
+  font-weight: 100;
+  color: #fff;
+}
+.comic-viewport .episode-info p {
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+.comic-viewport .episode-info .description {
+  color: #fff;
+  font-size: 16px;
+}
+.comic-viewport .episode-info .sub-info {
+  font-size: 12px;
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.series-content {
+  width: auto;
+  padding: 0 10px;
+}
+.series-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.series-tabs li {
+  display: inline-block;
+  width: auto;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.series-tabs li a {
+  display: block;
+  padding: 0 10px;
+}
+.series-tabs li a:focus {
+  outline: 0;
+}
+.series-tabs li.active {
+  border-bottom: 2px solid #000;
+}
+.series-tabs li.active a {
+  color: #000;
+}
+.btn {
+  background: #408698;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 100;
+}
+.btn:hover {
+  background: #295762;
+  color: #fff;
+}
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 15px 0;
+}
+footer p {
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .home-content {
+    min-height: 300px;
+    background-size: contain;
+  }
+  .home-content .home-content-inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 500px;
+  }
+  .home-content .home-content-right {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+  }
+  .home-content .home-content-right h3 {
+    text-align: right;
+  }
+  .home-content .home-content-right .episode-card {
+    margin-right: 0px;
+  }
+  .home-content .home-content-right .episode-card:hover {
+    margin-right: -2px;
+  }
+  .home-content .home-content-right .episode-card {
+    min-height: 180px;
+  }
+  .home-content .home-content-left {
+    width: 50%;
+  }
+  .series-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .episode-card {
+    margin-right: 20px;
+    min-height: 360px;
+    vertical-align: top;
+  }
+  .episode-card:hover,
+  .episode-card.active {
+    border: 2px solid #333;
+    margin: -2px 18px 18px -2px;
+  }
+  .episode-card a {
+    display: block;
+    min-height: 360px;
+  }
+  .comic-viewport {
+    margin-bottom: 30px;
+    min-height: 500px;
+  }
+  .comic-viewport .control-bar .arrow.next {
+    margin-right: 15px;
+  }
+  .comic-viewport .control-bar .progress-nav {
+    display: block;
+  }
+  .comic-viewport .control-bar .directional-buttons {
+    display: inline-block;
+    padding: 0px;
+  }
+  .comic-viewport .control-bar .ep-direction-btn {
+    margin: 0 15px 0 0;
+    clear: none;
+  }
+  .series-tabs li {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .home-content .home-content-inner {
+    padding: 0;
+  }
+  .home-content .home-content-right {
+    right: 0px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .comic-viewport .comic-screens .last-content {
+    padding: 15px;
+  }
+  .comic-viewport .comic-screens .last-content p {
+    display: none;
+  }
+}

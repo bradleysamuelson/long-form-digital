@@ -1,0 +1,42 @@
+<div class="series-content">
+<ul class="series-tabs">
+  <li ng-class="{active:isSet(1)}"><a href="javascript:void(0);" ng-click="setTab(1)">Episodes</a></li>
+  <li ng-class="{active:isSet(2)}"><a href="javascript:void(0);" ng-click="setTab(2)">About the Comic</a></li>
+  <li ng-class="{active:isSet(3)}"><a href="javascript:void(0);" ng-click="setTab(3)">Bonus</a></li>
+</ul>
+
+
+
+<!--Episode content-->
+<div class="tab-content" ng-show="isSet(1)">
+  <div class="episode-card" ng-repeat="episode in episodes"
+  			                          ng-class="{'active': currentEpisode.id == $index}">
+  	<a href="#/ep/{{$index}}" scroll-top>
+  	<div class="thumbnail-container"><img ng-src="{{episode.thumbnail}}" class="thumbnail"></div>
+  	<div class="card-content">
+  	  <h4>{{episode.name}}</h4>
+      <p>{{episode.description}}</p>
+      <p class="sub-info">Season {{episode.season}} Episode {{episode.ep}}</p>
+  	</div>
+  	</a>
+  </div> <!--/episode-card-->
+</div>
+
+
+<!-- About content -->
+<div class="tab-content" ng-show="isSet(2)">
+  <h3>About the comic</h3>
+  <p>This comic was created blah blah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ipsum suscipit nulla ultrices vulputate blandit sit amet neque. Praesent dignissim egestas gravida. Aenean nec molestie erat, a lacinia nulla. Duis vitae volutpat mi. Nunc arcu purus, congue id sollicitudin non, sagittis id nulla. Integer et purus bibendum, sagittis enim sit amet, hendrerit nisi. Maecenas at feugiat dolor. Donec rhoncus eros libero, eu interdum mi egestas nec. Vestibulum elit mi, vehicula quis sodales vel, luctus eu tellus. Aenean lacinia ligula ac quam vestibulum, pellentesque rhoncus tortor faucibus.
+
+Aliquam erat volutpat. Nam eget turpis iaculis, pellentesque justo sed, euismod ante. Mauris eu dictum justo, a malesuada lacus. Ut aliquet felis magna, quis porttitor est aliquet sit amet. Phasellus gravida tortor nec libero varius, eget ornare lacus faucibus. Nullam convallis tempor imperdiet. In tristique neque et rhoncus efficitur. Sed convallis, quam eu accumsan hendrerit, mauris magna finibus tortor, vitae sagittis tellus arcu id turpis. Suspendisse suscipit fermentum risus eget rhoncus. Curabitur neque justo, varius et dapibus sed, dignissim quis ligula. Vestibulum eget vestibulum diam. In hac habitasse platea dictumst.</p>
+</div>
+
+<!-- Bonus content -->
+<div class="tab-content" ng-show="isSet(3)">
+  <h3>Bonus Material</h3>
+  <p>Here is where bonus material would go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ipsum suscipit nulla ultrices vulputate blandit sit amet neque. Praesent dignissim egestas gravida. Aenean nec molestie erat, a lacinia nulla. Duis vitae volutpat mi. Nunc arcu purus, congue id sollicitudin non, sagittis id nulla. Integer et purus bibendum, sagittis enim sit amet, hendrerit nisi. Maecenas at feugiat dolor. Donec rhoncus eros libero, eu interdum mi egestas nec. Vestibulum elit mi, vehicula quis sodales vel, luctus eu tellus. Aenean lacinia ligula ac quam vestibulum, pellentesque rhoncus tortor faucibus.
+
+Aliquam erat volutpat. Nam eget turpis iaculis, pellentesque justo sed, euismod ante. Mauris eu dictum justo, a malesuada lacus. Ut aliquet felis magna, quis porttitor est aliquet sit amet. Phasellus gravida tortor nec libero varius, eget ornare lacus faucibus. Nullam convallis tempor imperdiet. In tristique neque et rhoncus efficitur. Sed convallis, quam eu accumsan hendrerit, mauris magna finibus tortor, vitae sagittis tellus arcu id turpis. Suspendisse suscipit fermentum risus eget rhoncus. Curabitur neque justo, varius et dapibus sed, dignissim quis ligula. Vestibulum eget vestibulum diam. In hac habitasse platea dictumst.</p>
+</div>
+
+</div><!--/series-content-->

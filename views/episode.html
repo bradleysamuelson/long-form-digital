@@ -1,0 +1,65 @@
+<section class="comic-viewport">
+		<ul class="comic-screens">
+  		<li ng-repeat="image in episode.images"  ng-show="isActive($index)">
+  		  <img ng-src="{{image}}" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" alt="" >
+  		</li>
+  		<li  ng-show="epComplete" ng-swipe-right="showPrev()" ng-swipe-left="showNext()">
+  		  <img ng-src="{{episode.lastimage}}" alt="">
+  		  <div class="last-image">
+  		    <!--if it's not the latest episode-->
+    		  <div class="last-content" ng-hide="isLatest()">
+    		    <h4><a class="btn" href="#/ep/{{currentEpisode.id + 1}}">Continue to the next episode...</a></h4>
+    		    <p>If you liked this comic please follow me on twitter or sign up for my email newsletter.</p>
+    		  </div>
+    		  <!--if it is the latest episode but not the final episode-->
+    		  <div class="last-content" ng-show="!isFinalEp() && isLatest()">
+    		    <h2>To Be Continued...</h2>
+    		    <p>If you'd like to be notified when the next episode is available you can subscribe to the rss feed, sign up for email alerts, or follow me on twitter!</p>
+    		  </div>
+    		  <!--if it's the final episode-->
+    		  <div class="last-content" ng-show="isFinalEp() && isLatest()"> 
+      		  <h2>The End!</h2>
+      		  <p>Thanks for reading. If you liked this comic and want to be notified of my future projects, please follow me on twitter or sign up for my email newsletter.</p> 
+    		  </div>
+    		  
+  		  </div>
+  		</li>
+		</ul>
+		<!-- controls -->
+		<div class="control-bar">
+		  <ul class="progress-nav">
+		    <li ng-repeat="image in episode.images" ng-class="{'active':isActive($index)}">
+  		    <a href="javascript:void(0);" class="progress-nav-link" ng-click="showScreen($index)"></a>
+		    </li>
+		  </ul>
+		  <div class="directional-buttons">
+		    <a class="ep-direction-btn" href="#/ep/{{currentEpisode.id - 1}}" ng-show="currentEpisode.id > 0" scroll-top>Previous Episode</a>
+        <a class="ep-direction-btn" href="#/ep/{{currentEpisode.id + 1}}" ng-show="(currentEpisode.id +1) < episodes.length" scroll-top>Next Episode</a>
+        <button class="arrow prev" ng-disabled="isPrevDisabled()"  ng-click="showPrev()"><img src="img/arrow-left.svg" alt="Previous"></button> 
+        <button class="arrow next" ng-disabled="isNextDisabled()" ng-click="showNext()"><img src="img/arrow-right.svg" alt="Next"></button>
+		  </div>
+		</div>
+		
+	
+	
+	<div class="episode-info">
+  	<h3>{{episode.name}}</h3>
+  	<p class="sub-info">Season {{episode.season}} Episode {{episode.ep}}</p>
+  	<p class="description">{{episode.description}}</p>
+  	<p class="sub-info" ng-show="episode.creator">Created by {{episode.creator}}</p>
+  	<p class="sub-info" ng-show="episode.writer">Writer: {{episode.writer}}</p>
+  	<p class="sub-info" ng-show="episode.artist">Artist: {{episode.artist}}</p>
+  	<p class="sub-info" ng-show="episode.pencils">Pencils: {{episode.pencils}}</p>
+  	<p class="sub-info" ng-show="episode.inker">Inks: {{episode.inker}}</p>
+  	<p class="sub-info" ng-show="episode.colorist">Colorist: {{episode.colorist}}</p>
+  	<p class="sub-info" ng-show="episode.letters">Letterer: {{episode.letters}}</p>
+  	
+	</div>
+	</section>
+	<div class="series-content-header">
+  	<div class="series-content-header-inner">
+  	  <!--<h1><a href="#/" scroll-top><img src="img/lfdlogo-white.svg" alt="Long Form Digital" class="logo"></a></h1>  	 --> 
+  	  <h1><a href="#/" scroll-top><img src="http://sectorfour.lineheight.co/wp-content/themes/lh-sectorfour/images/s4logo-red.svg" class="logo"></a></h1>
+  	</div>
+	</div>
+	<series-content></series-content>

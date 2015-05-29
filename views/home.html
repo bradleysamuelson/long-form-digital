@@ -1,0 +1,27 @@
+<div class="home-content">
+  <div class="home-content-inner">
+    <div class="home-content-left">
+  	  <!-- <h1><img src="img/lfdlogo-white.svg" alt="Long Form Digital" class="logo"></h1> -->
+  	  <h1><img src="http://sectorfour.lineheight.co/wp-content/themes/lh-sectorfour/images/s4logo-red.svg" class="logo"></h1>
+      <p>Series description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel ipsum suscipit nulla ultrices vulputate blandit sit amet neque. Praesent dignissim egestas gravida. Aenean nec molestie erat, a lacinia nulla. Duis vitae volutpat mi. Nunc arcu purus, congue id sollicitudin non, sagittis id nulla. Integer et purus bibendum, sagittis enim sit amet, hendrerit nisi. Maecenas at feugiat dolor. Donec rhoncus eros libero, eu interdum mi egestas nec. Vestibulum elit mi, vehicula quis sodales vel, luctus eu tellus. Aenean lacinia ligula ac quam vestibulum, pellentesque rhoncus tortor faucibus.</p>
+      <a href="#/ep/0" class="btn">Start from the beginning</a>
+    </div>
+    <div class="home-content-right">
+      <h3>Latest Episode</h3>
+    	<div  class="episode-card" ng-repeat="episode in episodes | limitTo: -1">
+    		<a href="#/ep/{{episode.id}}">
+    			<div class="thumbnail-container"><img ng-src="{{episode.thumbnail}}" class="thumbnail"></div>
+    				<div class="card-content">
+    				  <h4>{{episode.name}}</h4>
+              <p>{{episode.description}}</p>
+              <p class="sub-info">Season {{episode.season}} Episode {{episode.ep}}</p>
+    				</div>
+    		</a>
+    	</div>
+    </div>
+  </div> <!--/home-content-inner-->
+</div>
+
+<series-content></series-content>
+
+
