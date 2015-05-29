@@ -17,6 +17,9 @@ The web app is using a json file to drive the comic/episodes.
 
 Update the file in /js/services/episodes.js to point to the correct .json file for your comic.
 
+The sample .json file used in the demo can be found here:
+http://lineheight.co/dn/s4test.json
+
 For the last comic episode in a series, add this to the last episode in the .json file:
 "finalEpisode": false
 
